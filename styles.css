@@ -1,0 +1,53 @@
+/* === Global Page Styling === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, readable sans-serif font */
+  margin: 0; /* Remove default browser margin */
+  padding: 0; /* Remove default browser padding */
+  background-color: #f9f9f9; /* Light gray background for minimalistic design */
+  color: #333; /* Dark gray text for readability */
+}
+
+/* === Header Styling === */
+header {
+  background-color: #222; /* Dark background for contrast */
+  color: white; /* White text for strong contrast */
+  padding: 2rem; /* Spacious padding around content */
+  text-align: center; /* Center-align text in the header */
+}
+
+/* === Main Section Container === */
+section {
+  max-width: 800px; /* Limit width for better line length and readability */
+  margin: auto; /* Center section horizontally */
+  padding: 2rem; /* Padding around content */
+}
+
+/* === Headings === */
+h1, h2 {
+  font-weight: 400; /* Light font-weight for a modern look */
+}
+
+/* === Card Styling (Reusable Container) === */
+.card {
+  background-color: white; /* White background for content separation */
+  padding: 1.5rem; /* Internal spacing */
+  margin: 1rem 0; /* Vertical spacing between cards */
+  border-radius: 10px; /* Slightly rounded corners for a polished look */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
+}
+
+/* === Highlight Class === */
+.highlight {
+  color: #0056b3; /* Blue tone to emphasize text */
+  font-weight: bold; /* Bold to visually differentiate important phrases */
+}
+
+/* === Link Styling === */
+a {
+  color: #0056b3; /* Blue link color consistent with highlight */
+  text-decoration: none; /* No underline for a clean appearance */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for accessibility feedback */
+}

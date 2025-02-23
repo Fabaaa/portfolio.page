@@ -1,57 +1,69 @@
 <!DOCTYPE html>
+<!-- Declares the document type and HTML version (HTML5) -->
 <html lang="en">
 <head>
-    <!-- Defines the character encoding for the document, ensuring proper text rendering. -->
-    <meta charset="UTF-8">
-    <!-- Ensures the webpage is responsive by adjusting to different screen sizes. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Provides a short summary of the page content, useful for search engine snippets. -->
-    <meta name="description" content="Personal business card and portfolio showcasing realized projects and technical competencies.">
-    <!-- Lists keywords related to the page for search engines, though it's less relevant for modern SEO. -->
-    <meta name="keywords" content="portfolio, web development, projects, skills">
-    <!-- Ensures compatibility with the latest rendering engine in Internet Explorer. -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="canonical" href="https://fabaaa.github.io/">
-    <title>My Portfolio</title>
+  <!-- Defines the character encoding -->
+  <meta charset="UTF-8">
+  
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Sets the page title shown in browser tabs -->
+  <title>Fabio Dias Marques | Portfolio</title>
+  
+  <!-- Links external stylesheet for separation of concerns and clean structure -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my professional business card and portfolio.</p>
-    </header>
+  <!-- Header section contains the site title and subtitle -->
+  <header>
+    <h1>Fabio Dias Marques</h1>
+    <p>System Engineer | Aspiring Web Developer | Business IT Student</p>
+  </header>
+
+  <!-- Main content container -->
+  <section>
+
+    <!-- About Me section: personal background and characteristics -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p>A very sociable introvert. I have <span class="highlight">broad experience</span> in various industries including IT, legal services, and real estate. Currently, I’m pursuing a <span class="highlight">Bachelor of Science in Business Information Technology</span> at BFH, while working part-time as a System Engineer.</p>
+      <p>Driven, curious and a meticulous planner. Though I appreciate my privacy, I’m very open and engaging in the right setting. I enjoy challenges and continue exploring new tech as time allows.</p>
+    </div>
+
+    <!-- Experience section: chronological listing of relevant jobs -->
+    <div class="card">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>System Engineer</strong>, SecureIT Swiss GmbH (Dec 2022 – Present)</li>
+        <li><strong>Paralegal Assistant</strong>, Beutler Künzi Stutz AG (Feb 2017 – Dec 2022)</li>
+        <li><strong>Marketing Manager</strong>, Novazona AG (Sep 2017 – Jan 2018)</li>
+        <li><strong>Lehrling</strong>, Einwohnergemeinde Saanen (Aug 2013 – Aug 2016)</li>
+      </ul>
+    </div>
+
+    <!-- Education section: academic background and timeline -->
+    <div class="card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Berner Fachhochschule BFH</strong> – BSc, Business Information Technology (since Sep 2022)</li>
+        <li><strong>WKS KV Bildung</strong> – NVQ, Economics (2020 – 2022)</li>
+        <li><strong>Wirtschaftsschule Thun</strong> – Kaufmann EFZ (2013 – 2016)</li>
+      </ul>
+    </div>
+
+    <!-- Skills and Interests section: technical growth and mindset -->
+    <div class="card">
+      <h2>Skills & Interests</h2>
+      <p>I’m fascinated by programming and tech innovation. I’ve started with <span class="highlight">basic HTML and CSS</span> and am experimenting with frameworks and tooling. I lack real-world coding projects, but <span class="highlight">motivation isn’t an issue</span>. I learn steadily, hitting my first personal milestones.</p>
+    </div>
+
+    <!-- Contact section: encourages networking via LinkedIn -->
+    <div class="card">
+      <h2>Connect</h2>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/fabio-dias-marques-803157152/" target="_blank">Fabio Dias Marques</a></p>
+    </div>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A short introduction about your background, expertise, and passion for technology.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <!-- Placeholder for future projects -->
-            <li><strong>Project Placeholder:</strong> Add details of your project here.</li>
-            <li><strong>Project Placeholder:</strong> Another project can be listed here.</li>
-            <!-- More projects can be added later -->
-        </ul>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills & Technologies</h2>
-        <p>List your expertise in different technologies.</p>
-    </section>
-    
-    <section id="interactive">
-        <h2>Interactive Section</h2>
-        <!-- Button with an ID for CSS and JavaScript interaction -->
-        <button id="alertButton">Click me</button>
-    </section>
-    
-    <footer>
-        <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </footer>
-    
-    <script src="scripts.js"></script>
+  </section>
 </body>
 </html>
