@@ -51,3 +51,37 @@ a {
 a:hover {
   text-decoration: underline; /* Underline on hover for accessibility feedback */
 }
+
+
+/* === Dark Mode Styling === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #000;
+}
+
+body.dark-mode .top-nav {
+  background-color: #1a1a1a;
+}
+
+/* === Navigation Bar === */
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  background-color: #eee;
+}
+
+.top-nav button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
