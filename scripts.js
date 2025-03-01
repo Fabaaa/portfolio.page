@@ -1,6 +1,22 @@
-// JavaScript to handle dark mode toggle
-
+// JavaScript
 document.addEventListener("DOMContentLoaded", function () {
+    
+     // === Scroll to Top Button Logic ===
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+
+  scrollTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+    // === Dark Mode Toggle Logic ===
   const darkToggle = document.getElementById("darkModeToggle");
   if (darkToggle) {
     darkToggle.addEventListener("click", () => {
