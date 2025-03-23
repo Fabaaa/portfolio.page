@@ -1,6 +1,14 @@
 // JavaScript
 document.addEventListener("DOMContentLoaded", function () {
-    
+// === Hamburger Toggle Logic ===
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navContent = document.getElementById("navContent");
+
+if (hamburgerBtn && navContent) {
+  hamburgerBtn.addEventListener("click", () => {
+    navContent.classList.toggle("show");
+  });
+}
      // === Scroll to Top Button Logic ===
   const scrollTopBtn = document.getElementById("scrollTopBtn");
 

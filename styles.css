@@ -1,57 +1,60 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* === Global Page Styling === */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, readable sans-serif font */
-  margin: 0; /* Remove default browser margin */
-  padding: 0; /* Remove default browser padding */
-  background-color: #f9f9f9; /* Light gray background for minimalistic design */
-  color: #333; /* Dark gray text for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* === Header Styling === */
 header {
-  background-color: #222; /* Dark background for contrast */
-  color: white; /* White text for strong contrast */
-  padding: 2rem; /* Spacious padding around content */
-  text-align: center; /* Center-align text in the header */
+  background-color: #222;
+  color: white;
+  padding: 2rem;
+  text-align: center;
 }
 
 /* === Main Section Container === */
 section {
-  max-width: 800px; /* Limit width for better line length and readability */
-  margin: auto; /* Center section horizontally */
-  padding: 2rem; /* Padding around content */
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
 }
 
 /* === Headings === */
 h1, h2 {
-  font-weight: 400; /* Light font-weight for a modern look */
+  font-weight: 400;
 }
 
-/* === Card Styling (Reusable Container) === */
+/* === Card Styling === */
 .card {
-  background-color: white; /* White background for content separation */
-  padding: 1.5rem; /* Internal spacing */
-  margin: 1rem 0; /* Vertical spacing between cards */
-  border-radius: 10px; /* Slightly rounded corners for a polished look */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* === Highlight Class === */
 .highlight {
-  color: #0056b3; /* Blue tone to emphasize text */
-  font-weight: bold; /* Bold to visually differentiate important phrases */
+  color: #0056b3;
+  font-weight: bold;
 }
 
 /* === Link Styling === */
 a {
-  color: #0056b3; /* Blue link color consistent with highlight */
-  text-decoration: none; /* No underline for a clean appearance */
+  color: #0056b3;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline; /* Underline on hover for accessibility feedback */
+  text-decoration: underline;
 }
-
 
 /* === Dark Mode Styling === */
 body.dark-mode {
@@ -75,9 +78,11 @@ body.dark-mode .top-nav {
 /* === Navigation Bar === */
 .top-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   background-color: #eee;
+  border-bottom: 1px solid #ccc;
 }
 
 .top-nav button {
@@ -102,7 +107,6 @@ body.dark-mode .top-nav {
   border-radius: 10px;
   font-weight: bold;
   color: #003366;
-  margin-right: auto; /* Push to left side of nav */
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -115,22 +119,23 @@ body.dark-mode .skill-box {
   color: #ffffff;
 }
 
-/* Optional: smooth fade animation for skill changes */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === Contact Button Styling === */
+/* === Contact Button === */
 .contact-button {
   background-color: #0056b3;
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
-  margin-left: 1rem;
   font-weight: bold;
   transition: background-color 0.3s;
+  display: inline-block;
+  border: none;
+  text-align: center;
 }
 
 .contact-button:hover {
@@ -147,7 +152,7 @@ body.dark-mode .contact-button:hover {
 
 /* === Scroll to Top Button === */
 #scrollTopBtn {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   bottom: 40px;
   right: 30px;
@@ -174,4 +179,43 @@ body.dark-mode #scrollTopBtn {
 
 body.dark-mode #scrollTopBtn:hover {
   background-color: #ffffff;
+}
+
+/* === Responsive Layout for Small Screens === */
+@media (max-width: 600px) {
+  .top-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+    color: #0056b3;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: auto;
+  }
+
+  .nav-content {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-content.show {
+    display: flex;
+  }
+
+  .contact-button,
+  #darkModeToggle {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
