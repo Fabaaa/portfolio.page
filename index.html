@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,28 +11,25 @@
 
 <body>
   <nav class="top-nav">
-  <!-- Skill Box (Always visible) -->
-  <div class="skill-box dynamic-skill">
-    <span id="skill-icon">🔤</span>
-    <span id="skill-text">HTML</span>
-  </div>
+    <!-- Skill Box (Always visible) -->
+    <div class="skill-box dynamic-skill">
+      <span id="skill-icon">🔤</span>
+      <span id="skill-text">HTML</span>
+    </div>
 
-  <!-- Hamburger Toggle Button -->
-  <button type="button" class="hamburger" id="hamburgerBtn">☰</button>
+    <!-- Hamburger Toggle Button -->
+    <button type="button" class="hamburger" id="hamburgerBtn">☰</button>
 
-  <!-- Collapsible Nav Content -->
-  <div class="nav-content" id="navContent">
+    <!-- Collapsible Nav Content -->
+    <div class="nav-content" id="navContent">
+      <button type="button" id="darkModeToggle">Toggle Dark Mode</button>
+      <button type="button" id="colorPaletteBtn">🎨 New Color Palette</button>
+      <a href="https://www.linkedin.com/in/fabio-dias-marques-803157152/" target="_blank" class="contact-button">Contact</a>
+    </div>
+  </nav>
 
-    <!-- DarkMode Button-->
-    <button type="button" id="darkModeToggle">Toggle Dark Mode</button>
-
-    <!-- Change Color Palette -->
-<button type="button" id="colorPaletteBtn">🎨 New Color Palette</button>
-
-    <!-- LinkedIn Contact -->
-    <a href="https://www.linkedin.com/in/fabio-dias-marques-803157152/" target="_blank" class="contact-button">Contact</a>
-  </div>
-</nav>
+  <!-- Color Palette Preview -->
+  <div id="palettePreview" aria-label="Current color palette" title="Current color palette"></div>
 
   <!-- Header section -->
   <header>
@@ -78,12 +76,13 @@
   </section>
 
   <footer>
-  <p style="text-align:center; padding: 1rem;">&copy; 2025 Fabio Dias Marques</p>
-</footer>
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" title="Go to top">⬆️</button>
+    <p style="text-align:center; padding: 1rem;">&copy; 2025 Fabio Dias Marques</p>
+  </footer>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
 
-<!-- JS loaded at the end -->
+  <!-- JS loaded at the end -->
   <script src="scripts.js"></script>
 </body>
+
 </html>
