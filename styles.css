@@ -108,7 +108,7 @@ body.dark-mode .top-nav {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: var(--secondary);
+  background-color: var(--text-color);
   border-radius: 10px;
   font-weight: bold;
   color: var(--accent);
